@@ -1,5 +1,6 @@
 package com.github.gudian1618.springbootdemo;
 
+import com.github.gudian1618.springbootdemo.pojo.Dog;
 import com.github.gudian1618.springbootdemo.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -15,10 +16,17 @@ class SpringbootdemoApplicationTests {
     // 测试为属性赋值
     @Autowired
     private User user;
+    @Autowired
+    private Dog dog;
 
     @Test
     public void testUser() {
         System.out.println(user);
+    }
+
+    @Test
+    public void testDog() {
+        System.out.println(dog);
     }
 
     @Test
