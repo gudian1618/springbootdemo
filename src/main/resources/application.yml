@@ -2,6 +2,16 @@
 # 1.yml文件具有层级结构(通过缩进区分)
 # 2.yml文件key value之间使用:连接
 # 3.赋值时:后边必须加空格
+
+# 编辑默认环境配置
+spring:
+  profiles:
+    active: prod
+
+--- # 环境分割线
+spring:
+  profiles: dev
+
 server:
   port: 8090
   servlet:
@@ -12,3 +22,17 @@ user:
   id: 100
   username: 哥斯拉2
   age: 2002
+
+---
+spring:
+  profiles: prod
+
+server:
+  port: 8091
+  servlet:
+    context-path: /
+
+user:
+  id: 2000
+  username: 哥斯拉3
+  age: 2020
