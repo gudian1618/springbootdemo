@@ -1,6 +1,14 @@
+# 官方建议的配置文件
 # 1.yml文件具有层级结构(通过缩进区分)
 # 2.yml文件key value之间使用:连接
 # 3.赋值时:后边必须加空格
-server
+server:
+  port: 8090
+  servlet:
+    context-path: /
 
-
+# 为user属性赋值,可以编辑中文
+user:
+  id: 100
+  username: 哥斯拉2
+  age: 2002
