@@ -1,6 +1,7 @@
-package com.github.gudian1618.pojo;
+package com.github.gudian1618.springbootdemo.pojo;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -13,18 +14,26 @@ import java.io.Serializable;
  */
 
 @Component
+@ConfigurationProperties(prefix = "user")
 public class User implements Serializable {
 
     private static final long serialVersionUID = 8183808202736979920L;
 
     /**
-     * 从容器中取值之后
+     * 从容器中取值之后,传统的单属性从容其中取值
      */
-    @Value("${user.id}")
+//    @Value("${user.id}")
+//    private Integer id;
+//    @Value("${user.username}")
+//    private String username;
+//    @Value("${user.age}")
+//    private Integer age;
+
+    /**
+     * 利用前缀为多个属性从容器中取值
+     */
     private Integer id;
-    @Value("${user.username}")
-    private String username;
-    @Value("${user.age}")
+    private String  username;
     private Integer age;
 
     public Integer getId() {

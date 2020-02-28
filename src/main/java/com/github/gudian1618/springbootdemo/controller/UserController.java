@@ -1,4 +1,4 @@
-package com.github.gudian1618.controller;
+package com.github.gudian1618.springbootdemo.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

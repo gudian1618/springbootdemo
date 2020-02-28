@@ -1,6 +1,6 @@
-package com.github.gudian1618;
+package com.github.gudian1618.springbootdemo;
 
-import com.github.gudian1618.pojo.User;
+import com.github.gudian1618.springbootdemo.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

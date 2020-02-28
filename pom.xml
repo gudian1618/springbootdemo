@@ -56,6 +56,13 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--添加属性注入依赖,利用前缀赋值  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
     <!--内部配置tomcat服务器.将来项目打包部署时必须依赖该配置  -->
