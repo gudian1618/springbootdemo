@@ -1,6 +1,7 @@
 package com.github.gudian1618.springbootdemo;
 
 import com.github.gudian1618.springbootdemo.pojo.Dog;
+import com.github.gudian1618.springbootdemo.pojo.Shiro;
 import com.github.gudian1618.springbootdemo.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -18,6 +19,13 @@ class SpringbootdemoApplicationTests {
     private User user;
     @Autowired
     private Dog dog;
+    @Autowired
+    private Shiro shiro;
+
+    @Test
+    public void testShiro() {
+        shiro.pri();
+    }
 
     @Test
     public void testUser() {
